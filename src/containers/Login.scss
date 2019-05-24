@@ -1,0 +1,32 @@
+@import "./../style.scss";
+
+
+.log-in {
+  display: flex;
+  flex-direction: column;
+
+  &__input-text {
+    color: $dark_grey;
+    font-family: $fancy_font;
+    font-size: 3.75rem !important;
+  }
+
+  &__text {
+    color: white;
+    font-family: $main_font;
+    font-size: 3rem;
+  }
+
+  &__button_wrapper {
+    text-align: center;
+    padding-top: 8rem;
+  }
+  &__button {
+    color: $orange;
+    width: 35rem;
+    font-family: $fancy_font;
+    font-size: 8rem;
+    background-color: $light_grey;
+}
+}
+
