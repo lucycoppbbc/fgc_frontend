@@ -1,31 +1,31 @@
 const dev = {
     s3: {
-      REGION: "YOUR_DEV_S3_UPLOADS_BUCKET_REGION",
-      BUCKET: "YOUR_DEV_S3_UPLOADS_BUCKET_NAME"
+      REGION: "eu-west-1",
+      BUCKET: "fgc-backend-dev-attachmentsbucket-f2aqktb1imjv"
     },
     apiGateway: {
-      REGION: "YOUR_DEV_API_GATEWAY_REGION",
-      URL: "YOUR_DEV_API_GATEWAY_URL"
+      REGION: "eu-west-1",
+      URL: "https://f7vav1dral.execute-api.eu-west-1.amazonaws.com/dev"
     },
     cognito: {
-      REGION: "YOUR_DEV_COGNITO_REGION",
-      USER_POOL_ID: "YOUR_DEV_COGNITO_USER_POOL_ID",
-      APP_CLIENT_ID: "YOUR_DEV_COGNITO_APP_CLIENT_ID",
-      IDENTITY_POOL_ID: "YOUR_DEV_IDENTITY_POOL_ID"
+      REGION: "eu-west-1",
+      USER_POOL_ID: "eu-west-1_4UCPCf9dj",
+      APP_CLIENT_ID: "4gu9pt2h1h6s0ptnhsbe34vgq8",
+      IDENTITY_POOL_ID: "eu-west-1:19bfd1ee-2f41-481b-a701-e28ea4b3121e"
     }
   };
   
   const prod = {
     s3: {
-      REGION: "YOUR_PROD_S3_UPLOADS_BUCKET_REGION",
+      REGION: "eu-west-1",
       BUCKET: "YOUR_PROD_S3_UPLOADS_BUCKET_NAME"
     },
     apiGateway: {
-      REGION: "YOUR_PROD_API_GATEWAY_REGION",
+      REGION: "eu-west-1",
       URL: "YOUR_PROD_API_GATEWAY_URL"
     },
     cognito: {
-      REGION: "YOUR_PROD_COGNITO_REGION",
+      REGION: "eu-west-1",
       USER_POOL_ID: "YOUR_PROD_COGNITO_USER_POOL_ID",
       APP_CLIENT_ID: "YOUR_PROD_COGNITO_APP_CLIENT_ID",
       IDENTITY_POOL_ID: "YOUR_PROD_IDENTITY_POOL_ID"
