@@ -1,3 +1,5 @@
+@import "./style.scss";
+
 select.form-control,
 textarea.form-control,
 input.form-control {
@@ -15,6 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: $dark_grey;
 }
 
 code {

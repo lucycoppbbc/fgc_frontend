@@ -1,0 +1,21 @@
+@import "./style.scss";
+
+.app-nav_bar {
+  background-color: $orange;
+  border-color: white;
+
+  &__options {
+    font-size: 3rem;
+  }
+}
+
+.App {
+  margin-top: 15px;
+}
+
+.App .navbar-brand {
+  font-weight: bold;
+  font-family: $main_font;
+  color: $dark_grey;
+  font-size: 4rem;
+}

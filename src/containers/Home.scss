@@ -1,0 +1,82 @@
+
+@import url(https://fonts.googleapis.com/css?family=Ranga&display=swap);
+@import "../style.scss";
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.home-title {
+  font-family: $main_font;
+  color: $white;
+  font-size: 10rem; 
+  text-align: center;
+  padding-bottom: 1rem;
+
+  @media only screen and (max-width: 991px) {
+    font-size: 8rem;
+  }
+
+  @media only screen and (max-width: 702px) {
+    font-size: 7rem;
+  }
+
+  @media only screen and (max-width: 618px) {
+    font-size: 6rem;
+  }
+
+  @media only screen and (max-width: 534px) {
+    font-size: 5rem;
+  }
+
+  &__dots {
+    color:$orange;
+    display: inline;
+  }
+
+  &__intro {
+    color:$light_grey;
+    font-size: 3rem;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 618px) {
+      font-size: 2rem;
+    }
+
+  
+  }
+}
+
+.home-menu {
+  padding-top:10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.home-login_signup_button {
+  color: $orange;
+  width: 35rem;
+  font-family: $fancy_font;
+  font-size: 8rem;
+  background-color: $light_grey;
+
+  @media only screen and (max-width: 991px) {
+    width: 28rem;
+  }
+
+  @media only screen and (max-width: 618px) {
+    width: 22rem;
+    font-size: 5rem;
+  }
+
+  @media only screen and (max-width: 478px) {
+    width: 16rem;
+    font-size: 5rem;
+  }
+}
+
