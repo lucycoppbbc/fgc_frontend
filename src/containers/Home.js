@@ -6,28 +6,57 @@ import { PageHeader, ListGroup, ListGroupItem } from "react-bootstrap";
 import "./Home.scss";
 
 export default class Home extends Component {
+    constructor(props) {
+      super(props);
+    }
+
   renderTitleAndIntro() {
     return (
       <div className="home-title">
-        <p>Feltwell Cards & Gifts
+        <p>Feltwell Cards & Gifts </p>
         <p className="home-title__dots">...</p>
-        </p>
-        <p className="home-title__intro">Welcome to Feltwell Cards & Gifts stock database.
-        Please login or sign up.</p>
+ 
       </div>
     )
   }
 
   renderLogInButton () {
     return(
-      <button type="button" className="home-login_signup_button btn">Log In</button>
+      <button type="button" className="home-menu__button btn">Log In</button>
     )
   }
 
   renderSignUpButton() {
     return(
-      <button className="home-login_signup_button btn">Sign Up</button>
+      <button className="home-menu__button btn">Sign Up</button>
     )
+  }
+
+  renderAuthMenu() {
+    return(
+      <div className="home-menu">
+      <div className="home-menu__level">
+        <button type="button" className="home-menu__button btn">Add Products</button>
+        <button type="button" className="home-menu__button btn">View Products</button>
+      </div>
+     
+     <div className="home-menu__level">
+        <button type="button" className="home-menu__button btn">Search Products</button>
+        <button type="button" className="home-menu__button btn">Update Products</button>
+     </div>
+
+      </div>
+    )
+  }
+
+  renderNonAuthMenu() {
+    return (
+      <div className="home-menu">
+          {this.renderSignUpButton()}
+          {this.renderLogInButton()}
+      </div>
+    )
+   
   }
 
 
@@ -37,10 +66,7 @@ export default class Home extends Component {
     return (
       <div className="home-container">
         {this.renderTitleAndIntro()}
-        <div className="home-menu">
-          {this.renderSignUpButton()}
-          {this.renderLogInButton()}
-        </div>
+        {this.props.isAuthenticated ? this.renderAuthMenu() : this.renderNonAuthMenu()}
       </div>
     );
   }
